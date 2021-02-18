@@ -1,7 +1,7 @@
 # blender-setups
 Blender example setups for generating renderings from Virtual Unfolding
 
-In all these test files I've set up an [orthographic camera](https://en.wikipedia.org/wiki/Orthographic_projection) with an (isometric projection](https://en.wikipedia.org/wiki/Isometric_projection).
+In all these test files I've set up an [orthographic camera](https://en.wikipedia.org/wiki/Orthographic_projection) with an [isometric projection](https://en.wikipedia.org/wiki/Isometric_projection).
 
 **IMPORTANT**: The newest version of Blender (`2.91.2` at the time of writing this) does not support voxel textures in either of Eevee or Cycles rendering engines.  I rolled back to Blender `2.79` on MacOS to do these, volumetric rendering will not work on a version >`2.8`.  I have only tested the rest of these files in `2.79`.
 
