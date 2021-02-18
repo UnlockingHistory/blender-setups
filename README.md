@@ -11,8 +11,10 @@ This is an example file that lets you create a [volumetric rendering](https://do
 
 A really nice tutorial about setting up these types of renders is given in [Voxel Datacubes for 3D Visualization in Blender by Matías Gárate](https://iopscience.iop.org/article/10.1088/1538-3873/129/975/058010#paspaa4f5bs4).
 
-When you go to add your own .raw file to this blender template, be sure the change the dimensions of the cube to match the aspect ratio of your data.  By scaling up the size of the cube, you can increase the resolution of the resulting render.  You'll also need to tell blender the resolution of your data - mine happened to be a 58x58x58 voxel cube:
+When you go to add your own .raw file to this blender template, you'll need to tell blender the resolution of your data under Cube>Texture>Voxel Data - mine happened to be a 58x58x58 voxel cube:
 
 ![blender voxel data resolution ui](docs/rawres.png)
+
+Be sure to also change the dimensions of the cube to match the aspect ratio of your data.  By scaling up the size of the cube, you can increase the resolution of the resulting render.
 
 
