@@ -3,10 +3,9 @@ Blender example setups for generating renderings from Virtual Unfolding
 
 In all these test files I've set up an [orthographic camera](https://en.wikipedia.org/wiki/Orthographic_projection) with an [isometric projection](https://en.wikipedia.org/wiki/Isometric_projection).
 
-**IMPORTANT**: The newest version of Blender (`2.91.2` at the time of writing this) does not support voxel textures in either of Eevee or Cycles rendering engines.  I rolled back to Blender `2.79` on MacOS to do these, volumetric rendering will not work on a version >`2.8`.  I have only tested the rest of these files in `2.79`.
+**IMPORTANT**: The newest version of Blender (`2.91.2` at the time of writing this) does not support voxel data textures in either of Eevee or Cycles rendering engines.  I rolled back to Blender `2.79` on MacOS to do these, as volumetric texture rendering will not work on a version >`2.8`.  I have only tested these files on Blender `2.79`.
 
-I render out all my animations as pngs and then create a video from that with [ffmpeg](https://ffmpeg.org/).  The files are typically output from render in the form XXXX.png where X is a number.
-I use the following ffmpeg settings to write these sequential pngs to mp4:
+I render out all my animations from Blender as pngs and then create a video from that with [ffmpeg](https://ffmpeg.org/).  The files are typically output from Blender in the form XXXX.png where X is a number.  I use the following ffmpeg settings to write these sequential pngs to mp4:
 
 ```sh
 ffmpeg -r 30 -i PATH_TO_FRAMES/%4d.png -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -an OUTPUT_DIRECTORY/animation.mp4
@@ -27,7 +26,7 @@ This is an example file that lets you create a [volumetric rendering](https://do
 
 A really nice tutorial about setting up these types of renders is given in [Voxel Datacubes for 3D Visualization in Blender by Matías Gárate](https://iopscience.iop.org/article/10.1088/1538-3873/129/975/058010#paspaa4f5bs4).
 
-When you go to add your own .raw file to this blender template, you'll need to tell blender the resolution of your data under Cube>Texture>Voxel Data - mine happened to be a 58x58x58 voxel cube:
+When you add your own .raw file to this blender template, you'll need to tell blender the resolution of your data under Cube>Texture>Voxel Data - mine happened to be a 58x58x58 voxel cube:
 
 ![blender voxel data resolution ui](docs/rawres.png)
 
