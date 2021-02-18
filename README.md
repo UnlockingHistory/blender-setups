@@ -1,11 +1,11 @@
 # blender-setups
 Blender example setups for generating renderings from [Virtual Unfolding](https://github.com/UnlockingHistory/virtual-unfolding).
 
-## Usage Notes
+### Usage Notes
+
+**IMPORTANT**: The newest version of Blender (`2.91.2` at the time of writing this) does not support voxel data textures in either of Eevee or Cycles rendering engines.  I rolled back to Blender `2.79` on MacOS to do these, as volumetric texture rendering will not work on a version >`2.8`.  Only [VolumetricRendering.blend](https://github.com/UnlockingHistory/blender-setups#volumetricrenderingblend) *requires* volumetric textures, but so far all of these examples have only tested on Blender `2.79`.
 
 In all these test files I've set up an [orthographic camera](https://en.wikipedia.org/wiki/Orthographic_projection) with an [isometric projection](https://en.wikipedia.org/wiki/Isometric_projection).
-
-**IMPORTANT**: The newest version of Blender (`2.91.2` at the time of writing this) does not support voxel data textures in either of Eevee or Cycles rendering engines.  I rolled back to Blender `2.79` on MacOS to do these, as volumetric texture rendering will not work on a version >`2.8`.  I have only tested these files on Blender `2.79`.
 
 I render out all my animations from Blender as pngs and then create a video from that with [ffmpeg](https://ffmpeg.org/).  The files are typically output from Blender in the form XXXX.png where X is a number.  I use the following ffmpeg settings to write these sequential pngs to mp4:
 
