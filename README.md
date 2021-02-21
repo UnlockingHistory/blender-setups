@@ -40,6 +40,6 @@ I've already keyframed a spinning animation in the timeline, so you can try rend
 
 ## VolumetricRenderingFauxColoring.blend
 
-This file is the same as above, but I've added some faux paper coloring to the voxel texture and included some extra lights and ambient occlusion to make the depth pop a bit more.  I had to use some slower settings to get this to rendering without some nasty artifacts, so the rendering takes about 5x longer than the settings above.
+This file is the same as above, but I've added some faux paper coloring to the voxel texture and included some extra lights and ambient occlusion to make the depth pop a bit more.  I had to use some slower settings to get this to render without nasty artifacts, so the rendering takes about 8x longer than the settings above.
 
 ![volumetric rendering with faux colors animation](docs/scan_animation_DB-2004_color.gif)
