@@ -52,6 +52,6 @@ We've already keyframed a spinning animation in the timeline, so you can try ren
 
 This file is the same as above, but we've added some faux paper coloring to the voxel texture and included some extra lights and ambient occlusion to make the depth pop a bit more.  We had to use some slower settings to get this to render without nasty artifacts, so the rendering takes about 8x longer than the settings above.
 
-![volumetric rendering with faux colors animation](/docs/imgs.scan_animation_DB-2004_color.gif)
+![volumetric rendering with faux colors animation](/docs/imgs/scan_animation_DB-2004_color.gif)
 
 **IMPORTANT**: The newest version of Blender (`2.91.2` at the time of writing this) does not support voxel data textures in either of Eevee or Cycles rendering engines.  We rolled back to Blender `2.79` on MacOS to do these, as volumetric texture rendering will not work on a version >`2.8`.
